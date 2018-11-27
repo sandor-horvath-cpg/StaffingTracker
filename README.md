@@ -1,17 +1,34 @@
 # StaffingTracker
 
 todo: 
-  frontend: /all-candidate-data: switch label 'id' to 'position'
-  db id: check if id is generated, if not add this
-  add Spring security
-    show User Role (maybe name too) (implement this only after UserEntity is implemented)
-  implement CRUD for other entities(client, source, position, EmployeeShortCode)
-  research: Devon email notification (for PO with interview date, etc)
-  StatusEntity: change categories from(CG interview scheduled, Qualfied No GO) 
-    to (new entry(default), HR interview, professional interview, client interview)
-  Process Owner(EmployeeShortCodeEntity): add fields: name, email, beside the code
-    upd: change this to UserEntity with code, role(e.g. PO), name, email
+  - frontend: /all-candidate-data: switch label 'id' to 'position'
+  - db id: check if id is generated, if not add this
+  - StatusEntity: change categories from(CG interview scheduled, Qualfied No GO) 
+      Nov27: to (new entry(default), HR interview, professional interview, client interview)
+      Nov28: to (GO, No-GO, Selected by Client), or to the 18 status from the received excel
+  - change EmployeeShortCodeEntity to UserEntity
+      add fields: code, role(e.g. Process Owner), name, email
+  - add Spring Security
+      based on UserEntity (implement this only after UserEntity is implemented)
+      frontend: show logged in User Role (maybe name too)
+  - implement CRUD for other entities(Client, Source, Position, User)
+      frontend: add CRUD buttons/options
+  - ApplicantEntity: add field: 'HR Owner': autofill when HR adds the applicant
+      email notification to: 'HR Owner' and 'Process Owner'
+      with subject containing: applicant [name] [source] [position] [status] [interview date]
+  - new entity: ToDoEntity, with categories:
+      •	Szakmai interjú
+      •	HR interjú
+      •	CV Capgemini formátummá alakítása
+      •	További információ, akkor kell egy megjegyzés mező
+      •	Más a process owner, megjegyzés mező
+      (sidenote: some points here seems a bit redundant with the 18 status from the received excel)
 
+todo (only after the above todos are finished):
+  - külső interjúkat is nyomon követni (ez a belső intejúk után szokott lenni)
+  - report generálás
+  
+  
 Business requirements
   menu
     Staffing request: consult with HR about requirements
