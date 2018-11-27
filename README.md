@@ -2,7 +2,6 @@
 
 todo: 
   - frontend: /all-candidate-data: switch label 'id' to 'position'
-  - db id: check if id is generated, if not add this
   - StatusEntity: change categories from(CG interview scheduled, Qualfied No GO) 
       Nov27: to (new entry(default), HR interview, professional interview, client interview)
       Nov28: to (GO, No-GO, Selected by Client), or to the 18 status from the received excel
@@ -27,6 +26,9 @@ todo:
 todo (only after the above todos are finished):
   - külső interjúkat is nyomon követni (ez a belső intejúk után szokott lenni)
   - report generálás
+  
+done:
+- db id: check if id is generated, if not add this
   
   
 Business requirements
