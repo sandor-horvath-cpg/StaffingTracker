@@ -1,17 +1,15 @@
 # StaffingTracker
 
-todo: 
-  - frontend: /all-candidate-data: switch label 'id' to 'position'
+done:
+  - implement CRUD for other entities(Client, Source, Position, User)
+todo:
   - StatusEntity: change categories from(CG interview scheduled, Qualfied No GO) 
-      Nov27: to (new entry(default), HR interview, professional interview, client interview)
       Nov28: to (GO, No-GO, Selected by Client), or to the 18 status from the received excel
   - change EmployeeShortCodeEntity to UserEntity
       add fields: code, role(e.g. Process Owner), name, email
   - add Spring Security
       based on UserEntity (implement this only after UserEntity is implemented)
       frontend: show logged in User Role (maybe name too)
-  - implement CRUD for other entities(Client, Source, Position, User)
-      frontend: add CRUD buttons/options
   - ApplicantEntity: add field: 'HR Owner': autofill when HR adds the applicant
       email notification to: 'HR Owner' and 'Process Owner'
       with subject containing: applicant [name] [source] [position] [status] [interview date]
@@ -21,7 +19,10 @@ todo:
       •	CV Capgemini formátummá alakítása
       •	További információ, akkor kell egy megjegyzés mező
       •	Más a process owner, megjegyzés mező
-      (sidenote: some points here seems a bit redundant with the 18 status from the received excel)
+      (sidenote: some points here seems a bit redundant with the 18 status from the received excel) 
+todo frontend: 
+  - frontend: /all-candidate-data: switch label 'id' to 'position'
+  - frontend: implement CRUD for other entities(Client, Source, Position, User)
 
 todo (only after the above todos are finished):
   - külső interjúkat is nyomon követni (ez a belső intejúk után szokott lenni)
